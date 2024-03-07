@@ -187,52 +187,53 @@ You are able to listen for samples here: [Demo_link](https://anonimous4849.githu
 </tbody>
 </table>
 
+<h2 align = "justify">Installation 🛠️</h2>
 
-## Installation 🛠️
-
-First, you need to build `monotonic_align` code:
+First, you need to build the `monotonic_align` code.
 
 ```bash
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 ```
 
-**Note**:Python version is 3.9.13
+**Note**: Python version is 3.9.13
 
-## Pre-processing data for training 🧹
+<h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-You need to download [KazEmo](https://drive.google.com/file/d/1jHzzqS58Te8xR1VqBl4dcpOCitsESi62/view?usp=share_link) corpus and customize it as in `filelists/all_spk` by running `data_preparation.py`:
+You need to download the [KazEmoTTS](https://drive.google.com/file/d/1jHzzqS58Te8xR1VqBl4dcpOCitsESi62/view?usp=share_link) dataset and customize it as in `filelists/all_spk` by executing `data_preparation.py`:
+
 ```shell
 python data_preparation.py -d provide a directory of the KazEmo corpus
 ```
 
-## Training stage 🏋️‍♂️
-To start the training, you need to provide a path to the model configurations `configs/train_grad.json` and a directory for checkpoints `logs/train_logs` to specify your GPU.
+<h2 align = "justify">Training Stage 🏋️‍♂️</h2>
+
+To initiate the training process, you must specify the path to the model configurations, which can be found in `configs/train_grad.json`, and designate a directory for checkpoints, typically located at `logs/train_logs`, to specify the GPU you will be using.
 
 ```shell
 CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
 python train_EMA.py -c <configs/train_grad.json> -m <checkpoint>
 ```
 
-## Inference 🧠
+<h2 align = "justify">Inference 🧠</h2>
 
-### Pre-training stage 🏃
-If you want to use pre-trained model you need to download [checkpoints](https://drive.google.com/file/d/1yfIOoVZEiFflh9494Ul6bUmktYvdM7XM/view?usp=share_link) for TTS model and vocoder.
+<h3 align = "justify">Pre-Training Stage 🏃</h3>
 
-To run inference you need:
+If you intend to utilize a pre-trained model, you will need to download the necessary [checkpoints](https://drive.google.com/file/d/1yfIOoVZEiFflh9494Ul6bUmktYvdM7XM/view?usp=share_link) for both the TTS model and the vocoder.
 
-Create a text file with sentences you want to synthesize like `filelists/inference_generated.txt`.
+To conduct inference, follow these steps:
 
-Specify `txt` file as follows: `text|emotion id|speaker id`.
-
-Change path to the HiFi-Gan checkpoint in `inference_EMA.py`.
-
-Apply classifier guidance level to 100 `-g`.
+- Create a text file containing the sentences you wish to synthesize, such as `filelists/inference_generated.txt`.
+- Specify the `txt` file format as follows: `text|emotion id|speaker id`.
+- Adjust the path to the HiFi-Gan checkpoint in `inference_EMA.py`.
+- Set the classifier guidance level to 100 using the `-g` parameter.
 
 ```shell
 python inference_EMA.py -c <config> -m <checkpoint> -t <number-of-timesteps> -g <guidance-level> -f <path-for-text> -r <path-to-save-audios>
 ```
 
-## Citation 🎓
+<h2 align = "justify">Citation 🎓</h2>
+
+<p align = "justify">We kindly urge you, if you incorporate our dataset and/or model into your work, to cite our paper as a gesture of recognition for its valuable contribution. The act of referencing the relevant sources not only upholds academic honesty but also ensures proper acknowledgement of the authors' efforts. Your citation in your research significantly contributes to the continuous progress and evolution of the scholarly realm. Your endorsement and acknowledgement of our endeavours are genuinely appreciated.
 
 ```bibtex
 @misc{abilbekov2024kazemotts,
