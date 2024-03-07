@@ -1,6 +1,24 @@
-# KazEmoTTS
+<h1 align="center">KazEmoTTS <br> ⌨️ 😐 😠 🙂 😞 😱 😮 🗣</h1>
 
-## Abstract
+<p align="center">
+  <a href="https://github.com/IS2AI/Kazakh_Emotional_TTS/stargazers">
+    <img src="https://img.shields.io/github/stars/IS2AI/Kazakh_Emotional_TTS.svg?colorA=orange&colorB=orange&logo=github"
+         alt="GitHub stars">
+  </a>
+  <a href="https://github.com/IS2AI/Kazakh_Emotional_TTS/issues">
+    <img src="https://img.shields.io/github/issues/IS2AI/Kazakh_Emotional_TTS.svg"
+         alt="GitHub issues">
+  </a>
+  <a href="https://issai.nu.edu.kz">
+    <img src="https://img.shields.io/static/v1?label=ISSAI&amp;message=official site&amp;color=blue&amp"
+         alt="ISSAI Official Website">
+  </a> 
+</p>
+
+<p align = "center">This repository provides a <a href="some_cloud_link">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "link_to_be_added"><b>KazEmoTTS:
+A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
+
+
 
 This study focuses on the creation of the KazEmoTTS dataset, designed for emotional Kazakh text-to-speech
 (TTS) applications. KazEmoTTS is a collection of 54,760 audio-text pairs, with a total duration of 74.85 hours,
@@ -11,7 +29,139 @@ quality of the synthesized speech.
 
 You are able to listen for samples here: [Demo_link](https://anonimous4849.github.io)
 
+<a name = "stats"><h2>Dataset Statistics 📊</h2></a>
 
+<p align = "justify">The emotions in the dataset include "neutral", "angry", "happy", "sad", "scared", and "surprised".</p>
+
+<table align = "center">
+<thead align = "center">
+  <tr>
+    <th rowspan="3">Emotion</th>
+    <th rowspan="3"># recordings</th>
+    <th colspan="4">Narrator F1</th>
+    <th colspan="4">Narrator M1</th>
+    <th colspan="4">Narrator M2</th>
+  </tr>
+  <tr></tr>
+  <tr>
+    <th>Total (h)</th>
+    <th>Mean (s)</th>
+    <th>Min (s)</th>
+    <th>Max (s)</th>
+    <th>Total (h)</th>
+    <th>Mean (s)</th>
+    <th>Min (s)</th>
+    <th>Max (s)</th>
+    <th>Total (h)</th>
+    <th>Mean (s)</th>
+    <th>Min (s)</th>
+    <th>Max (s)</th>
+  </tr>
+</thead>
+<tbody align = "center">
+  <tr>
+    <td>neutral</td>
+    <td>9,385</td>
+    <td>5.85</td>
+    <td>5.03</td>
+    <td>1.03</td>
+    <td>15.51</td>
+    <td>4.54</td>
+    <td>4.77</td>
+    <td>0.84</td>
+    <td>16.18</td>
+    <td>2.30</td>
+    <td>4.69</td>
+    <td>1.02</td>
+    <td>15.81</td>
+  </tr>
+ <tr></tr>
+  <tr>
+    <td>angry</td>
+    <td>9,059</td>
+    <td>5.44</td>
+    <td>4.78</td>
+    <td>1.11</td>
+    <td>14.09</td>
+    <td>4.27</td>
+    <td>4.75</td>
+    <td>0.93</td>
+    <td>17.03</td>
+    <td>2.31</td>
+    <td>4.81</td>
+    <td>1.02</td>
+    <td>15.67</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>happy</td>
+    <td>9,059</td>
+    <td>5.77</td>
+    <td>5.09</td>
+    <td>1.07</td>
+    <td>15.33</td>
+    <td>4.43</td>
+    <td>4.85</td>
+    <td>0.98</td>
+    <td>15.56</td>
+    <td>2.23</td>
+    <td>4.74</td>
+    <td>1.09</td>
+    <td>15.25</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>sad</td>
+    <td>8,980</td>
+    <td>5.60</td>
+    <td>5.04</td>
+    <td>1.11</td>
+    <td>15.21</td>
+    <td>4.62</td>
+    <td>5.13</td>
+    <td>0.72</td>
+    <td>18.00</td>
+    <td>2.65</td>
+    <td>5.52</td>
+    <td>1.16</td>
+    <td>18.16</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>scared</td>
+    <td>9,098</td>
+    <td>5.66</td>
+    <td>4.96</td>
+    <td>1.00</td>
+    <td>15.67</td>
+    <td>4.13</td>
+    <td>4.51</td>
+    <td>0.65</td>
+    <td>16.11</td>
+    <td>2.34</td>
+    <td>4.96</td>
+    <td>1.07</td>
+    <td>14.49</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>surprised</td>
+    <td>9,179</td>
+    <td>5.91</td>
+    <td>5.09</td>
+    <td>1.09</td>
+    <td>14.56</td>
+    <td>4.52</td>
+    <td>4.92</td>
+    <td>0.81</td>
+    <td>17.67</td>
+    <td>2.28</td>
+    <td>4.87</td>
+    <td>1.04</td>
+    <td>15.81</td>
+  </tr>
+</tbody>
+</table>
 
 ## Installation
 
