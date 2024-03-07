@@ -1,0 +1,68 @@
+{
+  "xvector": false,
+  "pe": false,
+  "train": {
+    "test_size": 6,
+    "n_epochs": 10000,
+    "batch_size": 64,
+    "learning_rate": 1e-4,
+    "seed": 37,
+    "save_every": 1,
+    "use_gt_dur": false
+  },
+  "data": {
+    "load_mel_from_disk": false,
+    "train_utts": "filelists/all_spks/train_utts.txt",
+    "val_utts": "filelists/all_spks/eval_utts.txt",
+    "train_utt2phns": "filelists/all_spks/text",
+    "val_utt2phns": "filelists/all_spks/text",
+    "train_feats_scp": "filelists/all_spks/feats.scp",
+    "val_feats_scp": "filelists/all_spks/feats.scp",
+    "train_utt2spk": "filelists/all_spks/utt2spk.json",
+    "val_utt2spk": "filelists/all_spks/utt2spk.json",
+    "train_utt2emo": "filelists/all_spks/utt2emo.json",
+    "val_utt2emo": "filelists/all_spks/utt2emo.json",
+
+    "train_var_scp": "",
+    "val_var_scp": "",
+
+    "text_cleaners": [
+      "kazakh_cleaners"
+    ],
+    "max_wav_value": 32768.0,
+    "sampling_rate": 22050,
+    "filter_length": 1024,
+    "hop_length": 200,
+    "win_length": 800,
+    "n_mel_channels": 80,
+    "mel_fmin": 20.0,
+    "mel_fmax": 8000.0,
+    "utt2phn_path": "data/res_utt2phns.json",
+    "add_blank": false
+  },
+  "model": {
+    "n_vocab": 200,
+    "n_spks": 3,
+    "n_emos": 6,
+    "spk_emb_dim": 64,
+    "n_enc_channels": 192,
+    "filter_channels": 768,
+    "filter_channels_dp": 256,
+    "n_enc_layers": 6,
+    "enc_kernel": 3,
+    "enc_dropout": 0.1,
+    "n_heads": 2,
+    "window_size": 4,
+    "dec_dim": 64,
+    "beta_min": 0.05,
+    "beta_max": 20.0,
+    "pe_scale": 1000,
+    "d_decoder": 128,
+    "l_decoder": 3,
+    "k_decoder": 7,
+    "h_decoder": 4,
+    "decoder_dropout":0.1,
+
+    "classifier_type": "CNN-with-time"
+  }
+}
