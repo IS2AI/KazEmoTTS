@@ -18,20 +18,9 @@
 <p align = "center">This repository provides a <a href="some_cloud_link">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "link_to_be_added"><b>KazEmoTTS:
 A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
-
-
-This study focuses on the creation of the KazEmoTTS dataset, designed for emotional Kazakh text-to-speech
-(TTS) applications. KazEmoTTS is a collection of 54,760 audio-text pairs, with a total duration of 74.85 hours,
-featuring 34.23 hours delivered by a female narrator and 40.62 hours by two male narrators. The list of the
-emotions considered include “neutral”, “angry”, “happy”, “sad”, “scared”, and “surprised”. We also developed a TTS
-model trained on the KazEmoTTS dataset. We conducted both objective and subjective evaluations to assess the
-quality of the synthesized speech.
-
 You are able to listen for samples here: [Demo_link](https://anonimous4849.github.io)
 
 <a name = "stats"><h2>Dataset Statistics 📊</h2></a>
-
-<p align = "justify">The emotions in the dataset include "neutral", "angry", "happy", "sad", "scared", and "surprised".</p>
 
 <table align = "center">
 <thead align = "center">
@@ -163,7 +152,43 @@ You are able to listen for samples here: [Demo_link](https://anonimous4849.githu
 </tbody>
 </table>
 
-## Installation
+<table align = "center">
+<thead align = "center">
+  <tr>
+    <th>Narrator</th>
+    <th># recordings</th>
+    <th>Duration (h)</th>
+  </tr>
+</thead>
+<tbody align = "center">
+  <tr>
+    <td>F1</td>
+    <td>24,656</td>
+    <td>34.23</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>M1</td>
+    <td>19,802</td>
+    <td>26.51</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td>M2</td>
+    <td>10,302</td>
+    <td>14.11</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td><b>54,760</b></td>
+    <td><b>74.85</b></td>
+  </tr>
+</tbody>
+</table>
+
+
+## Installation 🛠️
 
 First, you need to build `monotonic_align` code:
 
@@ -173,14 +198,14 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 **Note**:Python version is 3.9.13
 
-## Pre-processing data for the training.
+## Pre-processing data for training 🧹
 
 You need to download [KazEmo](https://drive.google.com/file/d/1jHzzqS58Te8xR1VqBl4dcpOCitsESi62/view?usp=share_link) corpus and customize it as in `filelists/all_spk` by running `data_preparation.py`:
 ```shell
 python data_preparation.py -d provide a directory of the KazEmo corpus
 ```
 
-## Training stage.
+## Training stage 🏋️‍♂️
 To start the training, you need to provide a path to the model configurations `configs/train_grad.json` and a directory for checkpoints `logs/train_logs` to specify your GPU.
 
 ```shell
@@ -188,9 +213,9 @@ CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
 python train_EMA.py -c <configs/train_grad.json> -m <checkpoint>
 ```
 
-## Inference.
+## Inference 🧠
 
-### Pre-trained stage.
+### Pre-training stage 🏃
 If you want to use pre-trained model you need to download [checkpoints](https://drive.google.com/file/d/1yfIOoVZEiFflh9494Ul6bUmktYvdM7XM/view?usp=share_link) for TTS model and vocoder.
 
 To run inference you need:
@@ -207,9 +232,17 @@ Apply classifier guidance level to 100 `-g`.
 python inference_EMA.py -c <config> -m <checkpoint> -t <number-of-timesteps> -g <guidance-level> -f <path-for-text> -r <path-to-save-audios>
 ```
 
-## Citation
+## Citation 🎓
 
-```shell
+```bibtex
+@misc{abilbekov2024kazemotts,
+      title={{KazEmoTTS: A Dataset for Kazakh Emotional Text-to-Speech Synthesis}}, 
+      author={Adal Abilbekov, Saida Mussakhojayeva, Rustem Yeshpanov, Huseyin Atakan Varol},
+      year={2024},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={}
+}
 ```
 
 ## References
