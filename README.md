@@ -187,7 +187,7 @@ A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <h2 align = "justify">Installation 🛠️</h2>
 
-First, you need to build the `monotonic_align` code.
+First, you need to build the `monotonic_align` code: [link](https://github.com/jaywalnut310/glow-tts).
 
 ```bash
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
@@ -197,7 +197,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 <h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-You need to download the [KazEmoTTS](https://drive.google.com/file/d/1jHzzqS58Te8xR1VqBl4dcpOCitsESi62/view?usp=share_link) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:
+You need to download the [KazEmoTTS](https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:
 
 ```shell
 python data_preparation.py -d <path_to_KazEmoTTS_dataset>
@@ -216,7 +216,7 @@ python train_EMA.py -c <configs/train_grad.json> -m <checkpoint>
 
 <h3 align = "justify">Pre-Training Stage 🏃</h3>
 
-If you intend to utilize a pre-trained model, you will need to download the necessary [checkpoints](https://drive.google.com/file/d/1yfIOoVZEiFflh9494Ul6bUmktYvdM7XM/view?usp=share_link) for both the TTS model and the vocoder.
+If you intend to utilize a pre-trained model, you will need to download the necessary checkpoints [TTS](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pt_10000.zip), [vocoder](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pre_trained_hf.zip) for both the TTS model based on [GradTTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS) and [HiFi-GAN](https://github.com/jik876/hifi-gan).
 
 To conduct inference, follow these steps:
 
@@ -246,9 +246,3 @@ python inference_EMA.py -c <config> -m <checkpoint> -t <number-of-timesteps> -g 
       primaryClass={}
 }
 ```
-
-## References
-
-* HiFi-GAN vocoder, official github repository: [link](https://github.com/jik876/hifi-gan).
-* Monotonic Alignment Search algorithm is used for unsupervised duration modelling, official github repository: [link](https://github.com/jaywalnut310/glow-tts).
-* GradTTS text2speech model, official github repository: [link](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)
