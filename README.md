@@ -200,7 +200,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 You need to download the [KazEmoTTS](https://drive.google.com/file/d/1jHzzqS58Te8xR1VqBl4dcpOCitsESi62/view?usp=share_link) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:
 
 ```shell
-python data_preparation.py -d # provide a directory of the KazEmo corpus
+python data_preparation.py -d <path_to_KazEmoTTS_dataset>
 ```
 
 <h2 align = "justify">Training Stage 🏋️‍♂️</h2>
