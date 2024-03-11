@@ -18,8 +18,6 @@
 <p align = "center">This repository provides a <a href="some_cloud_link">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "link_to_be_added"><b>KazEmoTTS:
 A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
-You are able to listen for samples here: [Demo_link](https://anonimous4849.github.io)
-
 <a name = "stats"><h2>Dataset Statistics 📊</h2></a>
 
 <table align = "center">
@@ -230,6 +228,9 @@ To conduct inference, follow these steps:
 ```shell
 python inference_EMA.py -c <config> -m <checkpoint> -t <number-of-timesteps> -g <guidance-level> -f <path-for-text> -r <path-to-save-audios>
 ```
+
+<h2 align = "justify">Synthesized samples 🔈</h2>
+<p align = "justify">You can listen to some synthesized samples <a href = "https://anonimous4849.github.io">here</a>.</p>
 
 <h2 align = "justify">Citation 🎓</h2>
 
