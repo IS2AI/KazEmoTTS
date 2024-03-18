@@ -15,7 +15,7 @@
   </a> 
 </p>
 
-<p align = "center">This repository provides a <a href="some_cloud_link">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "link_to_be_added"><b>KazEmoTTS:
+<p align = "center">This repository provides a <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "link_to_be_added"><b>KazEmoTTS:
 A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <a name = "stats"><h2>Dataset Statistics 📊</h2></a>
@@ -187,7 +187,7 @@ A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <h2 align = "justify">Installation 🛠️</h2>
 
-First, you need to build the `monotonic_align` code: [link](https://github.com/jaywalnut310/glow-tts).
+First, you need to build the <a href = 'https://github.com/jaywalnut310/glow-tts'>`monotonic_align`</a>code:
 
 ```bash
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
