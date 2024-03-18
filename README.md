@@ -197,7 +197,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 <h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-<p align = "justify">You need to download the [KazEmoTTS](https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:</p>
+<p align = "justify">You need to download the <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">KazEmoTTS</a> dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:</p>
 
 ```shell
 python data_preparation.py -d <path_to_KazEmoTTS_dataset>
@@ -216,7 +216,7 @@ python train_EMA.py -c <configs/train_grad.json> -m <checkpoint>
 
 <h3 align = "justify">Pre-Training Stage 🏃</h3>
 
-<p align = "justify">If you intend to utilize a pre-trained model, you will need to download the necessary checkpoints [TTS](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pt_10000.zip), [vocoder](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pre_trained_hf.zip) for both the TTS model based on [GradTTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS) and [HiFi-GAN](https://github.com/jik876/hifi-gan).</p>
+<p align = "justify">If you intend to utilize a pre-trained model, you will need to download the necessary checkpoints <a href = "https://issai.nu.edu.kz/wp-content/uploads/2024/03/pt_10000.zip">TTS</a>, <a href = "https://issai.nu.edu.kz/wp-content/uploads/2024/03/pre_trained_hf.zip">vocoder</a> for both the TTS model based on <a href = "https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS">GradTTS</a> and <a href = "https://github.com/jik876/hifi-gan">HiFi-GAN</a>.</p>
 
 To conduct inference, follow these steps:
 
