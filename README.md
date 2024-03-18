@@ -187,7 +187,7 @@ A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <h2 align = "justify">Installation 🛠️</h2>
 
-First, you need to build the <a href = 'https://github.com/jaywalnut310/glow-tts'>`monotonic_align`</a>code:
+<p align = "justify">First, you need to build the <a href = 'https://github.com/jaywalnut310/glow-tts'>`monotonic_align`</a>code:</p>
 
 ```bash
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
@@ -197,7 +197,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 <h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-You need to download the [KazEmoTTS](https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:
+<p align = "justify">You need to download the [KazEmoTTS](https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform) dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:</p>
 
 ```shell
 python data_preparation.py -d <path_to_KazEmoTTS_dataset>
@@ -205,7 +205,7 @@ python data_preparation.py -d <path_to_KazEmoTTS_dataset>
 
 <h2 align = "justify">Training Stage 🏋️‍♂️</h2>
 
-To initiate the training process, you must specify the path to the model configurations, which can be found in `configs/train_grad.json`, and designate a directory for checkpoints, typically located at `logs/train_logs`, to specify the GPU you will be using.
+<p align = "justify">To initiate the training process, you must specify the path to the model configurations, which can be found in `configs/train_grad.json`, and designate a directory for checkpoints, typically located at `logs/train_logs`, to specify the GPU you will be using.</p>
 
 ```shell
 CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
@@ -216,7 +216,7 @@ python train_EMA.py -c <configs/train_grad.json> -m <checkpoint>
 
 <h3 align = "justify">Pre-Training Stage 🏃</h3>
 
-If you intend to utilize a pre-trained model, you will need to download the necessary checkpoints [TTS](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pt_10000.zip), [vocoder](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pre_trained_hf.zip) for both the TTS model based on [GradTTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS) and [HiFi-GAN](https://github.com/jik876/hifi-gan).
+<p align = "justify">If you intend to utilize a pre-trained model, you will need to download the necessary checkpoints [TTS](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pt_10000.zip), [vocoder](https://issai.nu.edu.kz/wp-content/uploads/2024/03/pre_trained_hf.zip) for both the TTS model based on [GradTTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS) and [HiFi-GAN](https://github.com/jik876/hifi-gan).</p>
 
 To conduct inference, follow these steps:
 
