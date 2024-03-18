@@ -197,7 +197,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 <h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-<p align = "justify">You need to download the <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">KazEmoTTS</a> dataset and customize it, as in `filelists/all_spk`, by executing `data_preparation.py`:</p>
+<p align = "justify">You need to download the <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">KazEmoTTS</a> dataset and customize it, as in <tt>filelists/all_spk</tt>, by executing <tt>data_preparation.py</tt>:</p>
 
 ```shell
 python data_preparation.py -d <path_to_KazEmoTTS_dataset>
@@ -205,7 +205,7 @@ python data_preparation.py -d <path_to_KazEmoTTS_dataset>
 
 <h2 align = "justify">Training Stage 🏋️‍♂️</h2>
 
-<p align = "justify">To initiate the training process, you must specify the path to the model configurations, which can be found in `configs/train_grad.json`, and designate a directory for checkpoints, typically located at `logs/train_logs`, to specify the GPU you will be using.</p>
+<p align = "justify">To initiate the training process, you must specify the path to the model configurations, which can be found in <tt>configs/train_grad.json</tt>, and designate a directory for checkpoints, typically located at <tt>logs/train_logs</tt>, to specify the GPU you will be using.</p>
 
 ```shell
 CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
