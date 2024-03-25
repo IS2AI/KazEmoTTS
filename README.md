@@ -187,7 +187,7 @@ A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <h2 align = "justify">Installation 🛠️</h2>
 
-<p align = "justify">First, you need to build the `<a href = 'https://github.com/jaywalnut310/glow-tts'>monotonic_align</a>` code:</p>
+<p align = "justify">First, you need to build the <a href = 'https://github.com/jaywalnut310/glow-tts'><tt>monotonic_align</tt></a> code:</p>
 
 ```bash
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
