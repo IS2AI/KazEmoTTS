@@ -1,12 +1,12 @@
 <h1 align="center">KazEmoTTS <br> ⌨️ 😐 😠 🙂 😞 😱 😮 🗣</h1>
 
 <p align="center">
-  <a href="https://github.com/IS2AI/Kazakh_Emotional_TTS/stargazers">
-    <img src="https://img.shields.io/github/stars/IS2AI/Kazakh_Emotional_TTS.svg?colorA=orange&colorB=orange&logo=github"
+  <a href="https://github.com/IS2AI/KazEmoTTS/stargazers">
+    <img src="https://img.shields.io/github/stars/IS2AI/KazEmoTTS"
          alt="GitHub stars">
   </a>
-  <a href="https://github.com/IS2AI/Kazakh_Emotional_TTS/issues">
-    <img src="https://img.shields.io/github/issues/IS2AI/Kazakh_Emotional_TTS.svg"
+  <a href="https://github.com/IS2AI/KazEmoTTS/issues">
+    <img src="https://img.shields.io/github/issues/IS2AI/KazEmoTTS.svg"
          alt="GitHub issues">
   </a>
   <a href="https://issai.nu.edu.kz">
