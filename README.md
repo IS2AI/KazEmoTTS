@@ -238,11 +238,11 @@ python inference_EMA.py -c <config> -m <checkpoint> -t <number-of-timesteps> -g 
 
 ```bibtex
 @misc{abilbekov2024kazemotts,
-      title={{KazEmoTTS: A Dataset for Kazakh Emotional Text-to-Speech Synthesis}}, 
-      author={Adal Abilbekov, Saida Mussakhojayeva, Rustem Yeshpanov, Huseyin Atakan Varol},
+      title={KazEmoTTS: A Dataset for Kazakh Emotional Text-to-Speech Synthesis}, 
+      author={Adal Abilbekov and Saida Mussakhojayeva and Rustem Yeshpanov and Huseyin Atakan Varol},
       year={2024},
-      eprint={},
+      eprint={2404.01033},
       archivePrefix={arXiv},
-      primaryClass={}
+      primaryClass={eess.AS}
 }
 ```
