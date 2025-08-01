@@ -15,7 +15,7 @@
   </a> 
 </p>
 
-<p align = "center">This repository provides a <https://huggingface.co/datasets/issai/KazEmoTTS>dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "https://arxiv.org/pdf/2404.01033.pdf"><b>KazEmoTTS:
+<p align = "center">This repository provides <a href =  <https://huggingface.co/datasets/issai/KazEmoTTS>dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "https://arxiv.org/pdf/2404.01033.pdf"><b>KazEmoTTS:
 A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <a name = "stats"><h2>Dataset Statistics 📊</h2></a>
@@ -197,7 +197,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 <h2 align = "justify">Pre-Processing Data for Training 🧹</h2>
 
-<p align = "justify">You need to download the <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">KazEmoTTS</a> dataset and customize it, as in <tt>filelists/all_spk</tt>, by executing <tt>data_preparation.py</tt>:</p>
+<p align = "justify">You need to download the <a href = "https://huggingface.co/datasets/issai/KazEmoTTS">KazEmoTTS</a> dataset and customize it, as in <tt>filelists/all_spk</tt>, by executing <tt>data_preparation.py</tt>:</p>
 
 ```shell
 python data_preparation.py -d <path_to_KazEmoTTS_dataset>
