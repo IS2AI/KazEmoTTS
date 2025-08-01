@@ -15,7 +15,7 @@
   </a> 
 </p>
 
-<p align = "center">This repository provides a <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTg88cvRbZkR5Go1p0IkQxFnOJv2KL6j2WVcsa6ut4XzQp5g/viewform">dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "https://arxiv.org/pdf/2404.01033.pdf"><b>KazEmoTTS:
+<p align = "center">This repository provides a <https://huggingface.co/datasets/issai/KazEmoTTS>dataset</a> and a text-to-speech (TTS) model for the paper <br><a href = "https://arxiv.org/pdf/2404.01033.pdf"><b>KazEmoTTS:
 A Dataset for Kazakh Emotional Text-to-Speech Synthesis</b></a></p>
 
 <a name = "stats"><h2>Dataset Statistics 📊</h2></a>
